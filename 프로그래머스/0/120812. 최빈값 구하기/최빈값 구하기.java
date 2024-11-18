@@ -15,19 +15,10 @@ class Solution {
         map.replace(array[i],++plus);
     }
     
-    
+    List<Integer> max=new List<>(Collections.max(map.values()));
         
-    int max = Collections.max(map.values());
-    int cnt=0; //최빈값 개수 카운트
-    int result=0; 
-        
-    for(Map.Entry<Integer,Integer> entry : map.entrySet()){
-        if(entry.getValue()==max){
-            cnt++;
-            result=entry.getKey();
-        }
-    }
-        return cnt == 1 ? result : -1 ;
+    int answer = Collections.max(map.values());
+        return answer;
     }
 }
 
