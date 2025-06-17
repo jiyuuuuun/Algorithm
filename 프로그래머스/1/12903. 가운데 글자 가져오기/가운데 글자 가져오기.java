@@ -5,7 +5,6 @@ class Solution {
             return s.substring(index-1,index+1);
         }else{
             return s.charAt(index)+"";
-
         }
             
     }
